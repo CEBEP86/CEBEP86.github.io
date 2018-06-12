@@ -54,7 +54,7 @@
         <!--  Main Wrap  -->
         <div id="main-wrap">
             <!--  Header & Menu  -->
-            <header id="header" class="border">
+            <header id="header">
                 <div class="container">
                     <nav class="navbar navbar-default">
                         <!--  Header Logo  -->
@@ -70,35 +70,16 @@
                             <div class="menu-holder">
                                 <ul>
                                     <li class="submenu">
-                                        <a href="javascript:void(0)" class="active-item">Home</a>
+                                        <a href="javascript:void(0)" class="active-item">направления</a>
                                         <ul class="sub-menu">
                                             <li><a href="index.html">Home Minimal</a></li>
-                                            <li><a href="index-creative.html">Home Creative</a></li>
+                                            <li><a href="index.html">Home Creative</a></li>
                                             <li><a href="index-agency.html">Home Agency</a></li>
                                             <li><a href="index-shop.html">Home Shop</a></li>
                                         </ul>
                                     </li>
-                                    <li class="submenu">
-                                        <a href="javascript:void(0)">Pages</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="page-image-header.html">Page Image Header</a></li>
-                                            <li><a href="services.html">Services</a></li>
-                                            <li><a href="404.html">404</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="submenu">
-                                        <a href="javascript:void(0)">Portfolio</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="portfolio-two-columns.html">Two Columns</a></li>
-                                            <li><a href="portfolio-three-columns.html">Three Columns</a></li>
-                                            <li><a href="portfolio-four-columns.html">Four Columns</a></li>
-                                            <li><a href="project-1.html">Project 1</a></li>
-                                            <li><a href="project-2.html">Project 2</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="submenu">
-                                        <a href="javascript:void(0)">Journal</a>
+                                       <li class="submenu">
+                                        <a href="javascript:void(0)">партнерам</a>
                                         <ul class="sub-menu">
                                             <li><a href="blog.html">Journal Classic</a></li>
                                             <li><a href="blog-minimal.html">Journal Minimal</a></li>
@@ -108,23 +89,34 @@
                                         </ul>
                                     </li>
                                     <li class="submenu">
-                                        <a href="javascript:void(0)">Shop</a>
+                                        <a href="javascript:void(0)">карьера</a>
                                         <ul class="sub-menu">
                                             <li><a href="index-shop.html">Index Shop</a></li>
                                             <li><a href="single-product.html">Product</a></li>
                                         </ul>
                                     </li>
-                                    <li>
+                                    <li class="submenu">
                                         <a href="elements.html">Elements</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="page-image-header.html">Page Image Header</a></li>
+                                            <li><a href="about.html">Services</a></li>
+                                            <li><a href="404.html">404</a></li>
+                                            <li><a href="portfolio-two-columns.html">Two Columns</a></li>
+                                            <li><a href="project-1.html">Project 1</a></li>
+                                            <li><a href="project-2.html">Project 2</a></li>
+                                        </ul>
                                     </li>
                                     <li>
-                                        <a href="contacts.html">Contacts</a>
+                                        <a href="contacts.html">контакты</a>
                                     </li>
+                                    <li><a href="about.html">о компании</a></li>
+
                                     <!-- Lang -->
                                     <li class="lang">
-                                        <span class="current"><a href="#">en</a></span>
+                                        <span class="current"><a href="#">ru</a></span>
                                         <ul>     
-                                            <li><a href="#">it</a></li>
+                                            <li><a href="#">en</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -149,12 +141,20 @@
             <div id="page-content">
                 <!--  HomePage header  -->
                 <div class="container">
-                   <div class="row no-margin">
-                       <div class="col-md-12 padding-leftright-null">
-                           <div id="home-header">
+                   <div class="row no-margin wrap-slider">
+                       <div class="col-md-6 padding-leftright-null">
+                           <div id="flexslider" class="home">
+                               <ul class="slides">
+                                   <li style="background-image:url(assets/img/slider-creative.jpg)"></li>
+                                   <li style="background-image:url(assets/img/slider-creative-2.jpg)"></li>
+                               </ul>
+                           </div>
+                       </div>
+                       <div class="col-md-6 padding-leftright-null">
+                           <div id="home-slider" class="secondary-background">
                                <div class="text">
-                                   <h1 class="margin-bottom-small"><span class="grey-dark">Hello! We're Creative</span><br>Web Developer &amp; Designer<span class="color">.</span></h1>
-                                   <p class="heading left max full grey-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quos rem, error facilis eveniet perspiciatis tempora totam animi doloribus. Quia officia laudantium dolor sapiente? Dolor maxime voluptatum sint molestias ipsa.</p>
+                                   <h1 class="white margin-bottom">Creative<br>Studio<span>.</span></h1>
+                                   <p class="heading left grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, reiciendis.</p>
                                </div>
                            </div>
                        </div>
@@ -162,14 +162,52 @@
                 </div>
                 <!--  END HomePage header  -->
                 <div id="home-wrap" class="content-section">
+                    <!-- Services Section -->
+                    <div class="container">
+                        <div class="row no-margin padding-lg">
+                            <!-- Single Services -->
+                            <div class="col-md-4 padding-leftright-null">
+                                <div class="text padding-topbottom-null padding-md-bottom">
+                                    <i class="icon ion-ios-bookmarks-outline color service margin-bottom-extrasmall"></i>
+                                    <h4 class="big margin-bottom-extrasmall">Mission</h4>
+                                    <p class="margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                </div>
+                            </div>
+                            <!-- END Single Services -->
+                            <div class="col-md-4 padding-leftright-null">
+                                <div class="text padding-topbottom-null padding-md-bottom">
+                                    <i class="icon ion-ios-analytics-outline color service margin-bottom-extrasmall"></i>
+                                    <h4 class="big margin-bottom-extrasmall">Vision</h4>
+                                    <p class="margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 padding-leftright-null">
+                                <div class="text padding-topbottom-null">
+                                    <i class="icon ion-ios-world-outline color service margin-bottom-extrasmall"></i>
+                                    <h4 class="big margin-bottom-extrasmall">Experience</h4>
+                                    <p class="margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Services Section -->
+                    <!-- Separator -->
+                    <div class="container">
+                        <div class="row no-margin">
+                            <div class="col-md-12 padding-leftright-null text-center">
+                                <i class="icon ion-ios-keypad color separator margin-bottom-small"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Separator -->
                     <div class="container">
                         <!--  Portfolio  -->
-                        <section id="projects" data-isotope="load-simple" class="page padding-top-null padding-onlybottom-lg">
+                        <section id="projects" data-isotope="load-simple" class="page padding-top-null">
                             <!--  Filters  -->
-                            <div class="row no-margin text-left">
+                            <div class="row no-margin text-center text-sm-left">
                                 <div class="col-sm-12 padding-leftright-null">
-                                    <div class="filter-wrap left">
-                                        <ul class="col-md-12 filters uppercase padding-leftright-null">
+                                    <div class="filter-wrap">
+                                        <ul class="col-md-12 filters padding-leftright-null">
                                             <li data-filter="*" class="is-checked">All</li>
                                             <li data-filter=".design">Design</li>
                                             <li data-filter=".branding">Branding</li>
@@ -183,7 +221,7 @@
                             <!--  END Filters  -->
                             <div class="projects-items equal three-columns">
                                 <!-- Single Project -->
-                                <div class="single-item one-item design branding">
+                                <div class="single-item styled one-item design branding">
                                     <div class="item">
                                         <img src="assets/img/item1.jpg" alt="">
                                         <div class="content">
@@ -194,7 +232,7 @@
                                     </div>
                                 </div>
                                 <!-- END Single Project -->
-                                <div class="single-item one-item branding web">
+                                <div class="single-item styled one-item branding web">
                                     <div class="item">
                                         <img src="assets/img/item2.jpg" alt="">
                                         <div class="content">
@@ -204,7 +242,7 @@
                                         <a href="project-2.html" class="link"></a>
                                     </div>
                                 </div>
-                                <div class="single-item one-item app design">
+                                <div class="single-item styled one-item app design">
                                     <div class="item">
                                         <img src="assets/img/item3.jpg" alt="">
                                         <div class="content">
@@ -214,7 +252,7 @@
                                         <a href="project-1.html" class="link"></a>
                                     </div>
                                 </div>
-                                <div class="single-item one-item photography">
+                                <div class="single-item styled one-item photography">
                                     <div class="item">
                                         <img src="assets/img/item4.jpg" alt="">
                                         <div class="content">
@@ -224,7 +262,7 @@
                                         <a href="project-2.html" class="link"></a>
                                     </div>
                                 </div>
-                                <div class="single-item one-item app design">
+                                <div class="single-item styled one-item app design">
                                     <div class="item">
                                         <img src="assets/img/item5.jpg" alt="">
                                         <div class="content">
@@ -234,7 +272,7 @@
                                         <a href="project-1.html" class="link"></a>
                                     </div>
                                 </div>
-                                <div class="single-item one-item web branding">
+                                <div class="single-item styled one-item web branding">
                                     <div class="item">
                                         <img src="assets/img/item6.jpg" alt="">
                                         <div class="content">
@@ -246,7 +284,7 @@
                                 </div>
                             </div>
                         </section>
-                        <!-- END Portfolio -->                    
+                        <!-- END Portfolio -->
                     </div>
                 </div>
             </div>
