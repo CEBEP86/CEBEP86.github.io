@@ -147,24 +147,91 @@
 
             <!--  Page Content  -->
             <div id="page-content">
-                <!--  HomePage header  -->
-                <div>
-                    <div class="row no-margin wrap-slider padding-leftright-null">
-                       <div class="col-md-6 padding-leftright-null">
-                           <div class="bg-img home error" style="background-image:url(assets/img/404.jpg)"></div>
-                       </div>
-                       <div class="col-md-6 padding-leftright-null">
-                           <div id="home-slider" class="error secondary-background">
+                <!--  Page header  -->
+                <div class="container">
+                   <div class="row no-margin">
+                       <div class="col-md-12 padding-leftright-null">
+                           <div id="page-header">
                                <div class="text">
-                                   <h1 class="white margin-bottom-extrasmall">404 Error<span>.</span></h1>
-                                   <p class="heading left grey-light margin-bottom">The page you were looking for doesn't exist.</p>
-                                   <a href="" class="btn-alt small white margin-null">Home</a>
+                                   <h1 class="margin-bottom-small">Contacts<span class="color">.</span></h1>
+                                   <p class="heading left max full grey-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quos rem, error facilis eveniet perspiciatis tempora totam animi doloribus. Quia officia laudantium dolor sapiente? Dolor maxime voluptatum sint molestias ipsa.</p>
                                </div>
                            </div>
                        </div>
                    </div>
                 </div>
-                <!--  END HomePage header  -->
+                <!--  END Page header  -->
+                <div id="home-wrap" class="content-section">
+                    <div class="row margin-leftright-null">
+                        <!--  Map. Settings in maps.js  -->
+                        <div class="col-md-12 padding-leftright-null map">
+                            <div id="map"></div>
+                        </div>
+                        <!--  END Map  -->
+                    </div>
+                    <!-- Contact -->
+                    <div class="container padding-md-bottom-lg">
+                        <div class="row no-margin padding-onlytop-lg">
+                            <div class="col-md-12 padding-leftright-null">
+                                <div class="text padding-topbottom-null">
+                                    <h2 class="heading margin-bottom-null">Let's work together<span class="color">.</span></h2>
+                                </div>
+                            </div>
+                            <div class="col-md-12 wrap-text">
+                                <div class="col-sm-4 padding-leftright-null">
+                                    <div class="text small">
+                                        <p class="small margin-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                        <p class="small grey-dark">322 Moon St, Venice, 1231, Italy<br>
+                                            Mon. - Fri., 9 a.m. - 6.00 p.m.</p>
+                                        <p class="small grey-dark">tel. <a href="#" class="grey-dark">+(39) 245 45 78 54</a><br>
+                                            fax. a+(39) 245 45 78 54
+                                        </p>
+                                        <p class="small"><a href="#" class="simple">hello@whiteble.com</a></p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 padding-leftright-null">
+                                    <!-- Contact Form -->
+                                    <form id="contact-form" class="padding-md padding-md-topbottom-null">
+                                        <div class="row no-margin">
+                                            <div class="col-md-6 padding-leftright-null">
+                                                <div class="text small padding-topbottom-null">
+                                                    <input class="form-field" name="name" id="name" type="text" placeholder="Name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 padding-leftright-null">
+                                                <div class="text small padding-topbottom-null">
+                                                    <input class="form-field" name="mail" id="mail" type="text" placeholder="Email">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row no-margin">
+                                            <div class="col-md-6 padding-leftright-null">
+                                                <div class="text small padding-topbottom-null">
+                                                    <input class="form-field" name="subjectForm" id="subjectForm" type="text" placeholder="Subject">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 padding-leftright-null">
+                                                <div class="text small padding-topbottom-null">
+                                                    <textarea class="form-field" name="messageForm" id="messageForm" rows="1" placeholder="Your Message"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 padding-leftright-null">
+                                                <div class="text small padding-topbottom-null">
+                                                    <div class="submit-area padding-onlytop-sm">
+                                                        <input type="submit" id="submit-contact" class="btn-alt active shadow" value="Send Message">
+                                                        <div id="msg" class="message"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!-- END Contact Form -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Contact -->
+                </div>
             </div>
             <!--  END Page Content -->
         </div>
@@ -220,6 +287,7 @@
         <script src="assets/js/plugins-scroll.js"></script>
         <script src="assets/js/imagesloaded.min.js"></script>
         <script src="assets/js/pace.min.js"></script>
+        <script src="assets/js/maps.js"></script>
         <script src="assets/js/main.js"></script>
     </body>
 </html>

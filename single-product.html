@@ -120,13 +120,33 @@
                                     <li>
                                         <a href="contacts.html">Contacts</a>
                                     </li>
-                                    <!-- Lang -->
-                                    <li class="lang">
-                                        <span class="current"><a href="#">en</a></span>
-                                        <ul>     
-                                            <li><a href="#">it</a></li>
+                                    <!-- Shop -->
+                                    <li class="shop">
+                                        <a href="javascript:void(0)" class="cart"><i class="icon ion-bag"></i><span class="count">1</span></a>
+                                        <ul class="cart-wrap">
+                                            <div class="shopping-cart">
+                                                <ul class="list-cart">
+                                                    <li class="item">
+                                                        <img src="assets/img/shop1.jpg" alt="">
+                                                        <div class="content">
+                                                            <h5>MacBook Cover</h5>
+                                                            <span class="quantity">
+                                                                1 x 299.00$
+                                                            </span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <p class="total">
+                                                    Subtotal: <span>$299.00</span>
+                                                </p>
+                                                <p class="buttons">
+                                                    <a href="#" class="my-cart">View Cart</a>
+                                                    <a href="#" class="checkout">Checkout</a>
+                                                </p>
+                                            </div>
                                         </ul>
                                     </li>
+                                    <!--  END Shop -->
                                 </ul>
                             </div>
                         </div>
@@ -140,6 +160,15 @@
                             </div>
                         </div>
                         <!--  END Button for Responsive Menu  -->
+                        <!--  Shop Icon Mobile -->
+                        <div class="shop-mobile">
+                            <ul>
+                                <li class="shop">
+                                    <a href="javascript:void(0)" class="cart"><i class="icon ion-bag"></i><span class="count">1</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--  END Shop Icon Mobile -->
                     </nav>
                 </div>
             </header>
@@ -147,146 +176,138 @@
 
             <!--  Page Content  -->
             <div id="page-content">
-                <!--  Page header  -->
-                <div class="container">
-                   <div class="row no-margin">
-                       <div class="col-md-12 padding-leftright-null">
-                           <div id="page-header">
-                               <div class="text">
-                                   <h1 class="margin-bottom-small">About<span class="color">.</span></h1>
-                                   <p class="heading left max full grey-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae quos rem, error facilis eveniet perspiciatis tempora totam animi doloribus. Quia officia laudantium dolor sapiente? Dolor maxime voluptatum sint molestias ipsa.</p>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-                </div>
-                <!--  END Page header  -->
                 <div id="home-wrap" class="content-section">
-                    <!-- Section -->
+                    <!-- Product Intro -->
                     <div class="container">
-                        <div class="row no-margin padding-lg">
-                            <div class="col-md-4 padding-leftright-null">
-                                <div class="text first padding-top-null">
-                                    <h2 class="heading margin-bottom-extrasmall">Who we are<span class="color">.</span></h2>
-                                </div>
-                            </div>
-                            <div class="col-md-8 padding-leftright-null">
-                                <div class="text last padding-topbottom-null">
-                                    <p class="heading left full margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END Section -->
-                    <!-- Services -->
-                    <div class="container">
-                        <div class="row no-margin wrap-text padding-onlytop-md">
-                            <div class="col-md-4 padding-leftright-null">
+                        <div class="row no-margin wrap-text padding-onlytop-lg">
+                            <div class="col-md-6 padding-leftright-null">
                                 <div class="text small padding-top-null">
-                                    <h2 class="heading margin-bottom-extrasmall">Our Services<span class="color">.</span></h2>
+                                    <img src="assets/img/shop1.jpg" alt="" class="img-post">
                                 </div>
                             </div>
-                            <div class="col-md-8 padding-leftright-null">
+                            <div class="col-md-6 padding-leftright-null">
                                <div class="row no-margin">
                                    <!-- Single Services -->
-                                   <div class="col-md-6 padding-leftright-null">
+                                   <div id="product-header">
                                        <div class="text small padding-top-null padding-md-bottom">
-                                           <i class="icon ion-ios-bookmarks-outline color service margin-bottom-extrasmall"></i>
-                                           <h4 class="big margin-bottom-extrasmall">Mission</h4>
-                                           <p class="margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                                       </div>
-                                   </div>
-                                   <!-- END Single Services -->
-                                   <div class="col-md-6 padding-leftright-null">
-                                       <div class="text small padding-top-null padding-md-bottom">
-                                           <i class="icon ion-ios-analytics-outline color service margin-bottom-extrasmall"></i>
-                                           <h4 class="big margin-bottom-extrasmall">Vision</h4>
-                                           <p class="margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                           <h1>Mac Pro curvex<span class="color">.</span></h1>
+                                           <span class="price">$299.00</span>
+                                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                           <div class="add-to-cart">
+                                               <input type="number" step="1" min="" max="" name="quantity" value="1" title="Qtà" class="input-text qty text" size="4">
+                                               <button type="submit" class="btn-alt small border">Add to cart</button>
+                                           </div>
+                                           <a href="javascript:void(0)" id="btn-share" class="margin-bottom">Share</a>
+                                           <div class="share-box">
+                                               <a href="#"><i class="fa fa-facebook"></i></a>
+                                               <a href="#"><i class="fa fa-twitter"></i></a>
+                                               <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                               <a href="#"><i class="fa fa-envelope"></i></a>
+                                           </div>
+                                           <span class="product-cats">
+                                               Categories <a href="">New Arrivals</a>, <a href="">Accessories</a>
+                                           </span>
+                                           <span class="product-tags">
+                                               Tags <a href="">Wood</a>, <a href="">Notebook</a>
+                                           </span>
                                        </div>
                                    </div>
                                </div>
-                                <div class="row no-margin">
-                                    <div class="col-md-6 padding-leftright-null">
-                                        <div class="text small padding-md-topbottom-null">
-                                            <i class="icon ion-ios-world-outline color service margin-bottom-extrasmall"></i>
-                                            <h4 class="big margin-bottom-extrasmall">Experience</h4>
-                                            <p class="margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 padding-leftright-null">
-                                        <div class="text small">
-                                            <i class="icon ion-ios-chatboxes-outline color service margin-bottom-extrasmall"></i>
-                                            <h4 class="big margin-bottom-extrasmall">Support</h4>
-                                            <p class="margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- END Services -->
-                    <!-- Team -->
+                    <!-- END Product Intro -->
+                    <!-- Full width Border Separator -->
+                    <div class="row no-margin">
+                        <div class="border-separator"></div>
+                    </div>
+                    <!-- END Full Width Border Separator -->
                     <div class="container">
-                        <div class="row no-margin wrap-text padding-onlytop-lg padding-onlybottom-lg">
-                            <div class="col-md-4 padding-leftright-null">
-                                <div class="text small padding-top-null">
-                                    <h2 class="heading margin-bottom-extrasmall">Our Team<span class="color">.</span></h2>
-                                </div>
-                            </div>
-                            <div class="col-md-8 padding-leftright-null">
-                                <div class="row team no-margin">
-                                    <div class="col-sm-6 padding-leftright-null">
-                                        <div class="person padding-onlybottom-md padding-md-bottom-null">
-                                            <img src="assets/img/staff1.jpg" alt="" class="img-responsive">
-                                            <h3 class="color">Alexia Brown</h3>
-                                            <span>CEO</span>
-                                            <ul>
-                                                <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                                <li><a href="">
-                                                    <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                                <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 padding-leftright-null">
-                                        <div class="person padding-onlybottom-md padding-md-bottom-null">
-                                            <img src="assets/img/staff2.jpg" alt="" class="img-responsive">
-                                            <h3 class="color">Julio Sanchez</h3>
-                                            <span>CTO</span>
-                                            <ul>
-                                                <li><a href="">
-                                                    <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                                <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 padding-leftright-null">
-                                        <div class="person padding-onlybottom-md padding-md-bottom-null">
-                                            <img src="assets/img/staff3.jpg" alt="" class="img-responsive">
-                                            <h3>Paul Tinox</h3>
-                                            <span>Web Developer</span>
-                                            <ul>
-                                                <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                                <li><a href="">
-                                                    <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 padding-leftright-null">
-                                        <div class="person">
-                                            <img src="assets/img/staff4.jpg" alt="" class="img-responsive">
-                                            <h3>Joe Doe</h3>
-                                            <span>Account</span>
-                                            <ul>
-                                                <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                                <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="row no-margin wrap-text">
+                            <div class="col-md-12 padding-leftright-null">
+                               <div class="text padding-bottom-null small">
+                                   <!--  Tab  -->
+                                   <!-- Nav tabs -->
+                                   <ul class="nav nav-tabs product" role="tablist">
+                                       <li role="presentation" class="active"><a href="#tab-one" aria-controls="tab-one" role="tab" data-toggle="tab">Description</a></li>
+                                       <li role="presentation"><a href="#tab-two" aria-controls="tab-two" role="tab" data-toggle="tab">Information</a></li>
+                                   </ul>
+                                   <!--  Nav Tabs  -->
+                                   <!-- Tab panes -->
+                                   <div class="tab-content">
+                                       <div role="tabpanel" class="tab-pane active" id="tab-one">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</div>
+                                       <div role="tabpanel" class="tab-pane" id="tab-two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci earum, voluptate ad nesciunt a eveniet beatae distinctio harum sapiente molestias voluptates dolorem reiciendis laborum numquam quidem. Nemo recusandae, id modi, numquam nesciunt nihil voluptatem facere, at nisi molestiae excepturi eos.</div>
+                                   </div>
+                                   <!-- Tab panes -->
+                                   <!--  Tab  -->
+                               </div>
                             </div>
                         </div>
-                    </div>   
+                    </div>
+                    <!-- Full width Border Separator -->
+                    <div class="row no-margin">
+                        <div class="border-separator"></div>
+                    </div>
+                    <!-- END Full Width Border Separator -->
+                    <div class="container padding-onlybottom-md">
+                        <div class="row no-margin padding-onlytop-lg">
+                            <div class="col-md-12 padding-leftright-null">
+                                <div class="text padding-top-null padding-onlybottom-sm">
+                                    <h2 class="heading margin-bottom-null">Related Products<span class="color">.</span></h2>
+                                </div>
+                            </div>
+                            <section id="projects" data-isotope="load-simple" class="related padding-bottom-null">
+                                <div class="col-md-12 padding-leftright-null">
+                                    <div class="projects-items equal three-columns">
+                                        <!-- Single Project -->
+                                        <div class="single-item shop one-item design branding">
+                                            <div class="item">
+                                                <img src="assets/img/shop2.jpg" alt="">
+                                                <div class="content">
+                                                    <i class="icon ion-ios-cart-outline"></i>
+                                                    <div>
+                                                        <h3>Housery</h3>
+                                                        <span class="price">$182</span>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet</p>
+                                                </div>
+                                                <a href="single-product.html" class="link"></a>
+                                            </div>
+                                        </div>
+                                        <!-- END Single Project -->
+                                        <div class="single-item shop one-item branding web">
+                                            <div class="item">
+                                                <img src="assets/img/shop3.jpg" alt="">
+                                                <div class="content">
+                                                    <i class="icon ion-ios-cart-outline"></i>
+                                                    <div>
+                                                        <h3>Greenline</h3>
+                                                        <span class="price">$50</span>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet</p>
+                                                </div>
+                                                <a href="single-product.html" class="link"></a>
+                                            </div>
+                                        </div>
+                                        <div class="single-item shop one-item app design">
+                                            <div class="item">
+                                                <img src="assets/img/shop4.jpg" alt="">
+                                                <div class="content">
+                                                    <i class="icon ion-ios-cart-outline"></i>
+                                                    <div>
+                                                        <h3>Enfasi</h3>
+                                                        <span class="price">$13</span>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet</p>
+                                                </div>
+                                                <a href="single-product.html" class="link"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!--  END Page Content -->

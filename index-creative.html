@@ -54,7 +54,7 @@
         <!--  Main Wrap  -->
         <div id="main-wrap">
             <!--  Header & Menu  -->
-            <header id="header" class="border">
+            <header id="header">
                 <div class="container">
                     <nav class="navbar navbar-default">
                         <!--  Header Logo  -->
@@ -148,23 +148,153 @@
             <!--  Page Content  -->
             <div id="page-content">
                 <!--  HomePage header  -->
-                <div>
-                    <div class="row no-margin wrap-slider padding-leftright-null">
+                <div class="container">
+                   <div class="row no-margin wrap-slider">
                        <div class="col-md-6 padding-leftright-null">
-                           <div class="bg-img home error" style="background-image:url(assets/img/404.jpg)"></div>
+                           <div id="flexslider" class="home">
+                               <ul class="slides">
+                                   <li style="background-image:url(assets/img/slider-creative.jpg)"></li>
+                                   <li style="background-image:url(assets/img/slider-creative-2.jpg)"></li>
+                               </ul>
+                           </div>
                        </div>
                        <div class="col-md-6 padding-leftright-null">
-                           <div id="home-slider" class="error secondary-background">
+                           <div id="home-slider" class="secondary-background">
                                <div class="text">
-                                   <h1 class="white margin-bottom-extrasmall">404 Error<span>.</span></h1>
-                                   <p class="heading left grey-light margin-bottom">The page you were looking for doesn't exist.</p>
-                                   <a href="" class="btn-alt small white margin-null">Home</a>
+                                   <h1 class="white margin-bottom">Creative<br>Studio<span>.</span></h1>
+                                   <p class="heading left grey-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, reiciendis.</p>
                                </div>
                            </div>
                        </div>
                    </div>
                 </div>
                 <!--  END HomePage header  -->
+                <div id="home-wrap" class="content-section">
+                    <!-- Services Section -->
+                    <div class="container">
+                        <div class="row no-margin padding-lg">
+                            <!-- Single Services -->
+                            <div class="col-md-4 padding-leftright-null">
+                                <div class="text padding-topbottom-null padding-md-bottom">
+                                    <i class="icon ion-ios-bookmarks-outline color service margin-bottom-extrasmall"></i>
+                                    <h4 class="big margin-bottom-extrasmall">Mission</h4>
+                                    <p class="margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                </div>
+                            </div>
+                            <!-- END Single Services -->
+                            <div class="col-md-4 padding-leftright-null">
+                                <div class="text padding-topbottom-null padding-md-bottom">
+                                    <i class="icon ion-ios-analytics-outline color service margin-bottom-extrasmall"></i>
+                                    <h4 class="big margin-bottom-extrasmall">Vision</h4>
+                                    <p class="margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 padding-leftright-null">
+                                <div class="text padding-topbottom-null">
+                                    <i class="icon ion-ios-world-outline color service margin-bottom-extrasmall"></i>
+                                    <h4 class="big margin-bottom-extrasmall">Experience</h4>
+                                    <p class="margin-bottom-null">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Services Section -->
+                    <!-- Separator -->
+                    <div class="container">
+                        <div class="row no-margin">
+                            <div class="col-md-12 padding-leftright-null text-center">
+                                <i class="icon ion-ios-keypad color separator margin-bottom-small"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Separator -->
+                    <div class="container">
+                        <!--  Portfolio  -->
+                        <section id="projects" data-isotope="load-simple" class="page padding-top-null">
+                            <!--  Filters  -->
+                            <div class="row no-margin text-center text-sm-left">
+                                <div class="col-sm-12 padding-leftright-null">
+                                    <div class="filter-wrap">
+                                        <ul class="col-md-12 filters padding-leftright-null">
+                                            <li data-filter="*" class="is-checked">All</li>
+                                            <li data-filter=".design">Design</li>
+                                            <li data-filter=".branding">Branding</li>
+                                            <li data-filter=".photography">Photography</li>
+                                            <li data-filter=".web">Web</li>
+                                            <li data-filter=".app">Apps</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  END Filters  -->
+                            <div class="projects-items equal three-columns">
+                                <!-- Single Project -->
+                                <div class="single-item styled one-item design branding">
+                                    <div class="item">
+                                        <img src="assets/img/item1.jpg" alt="">
+                                        <div class="content">
+                                            <h3>Housery</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                                        </div>
+                                        <a href="project-1.html" class="link"></a>
+                                    </div>
+                                </div>
+                                <!-- END Single Project -->
+                                <div class="single-item styled one-item branding web">
+                                    <div class="item">
+                                        <img src="assets/img/item2.jpg" alt="">
+                                        <div class="content">
+                                            <h3>GreenLine</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                                        </div>
+                                        <a href="project-2.html" class="link"></a>
+                                    </div>
+                                </div>
+                                <div class="single-item styled one-item app design">
+                                    <div class="item">
+                                        <img src="assets/img/item3.jpg" alt="">
+                                        <div class="content">
+                                            <h3>Enfasi</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                                        </div>
+                                        <a href="project-1.html" class="link"></a>
+                                    </div>
+                                </div>
+                                <div class="single-item styled one-item photography">
+                                    <div class="item">
+                                        <img src="assets/img/item4.jpg" alt="">
+                                        <div class="content">
+                                            <h3>Pulse</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                                        </div>
+                                        <a href="project-2.html" class="link"></a>
+                                    </div>
+                                </div>
+                                <div class="single-item styled one-item app design">
+                                    <div class="item">
+                                        <img src="assets/img/item5.jpg" alt="">
+                                        <div class="content">
+                                            <h3>Archotale</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                                        </div>
+                                        <a href="project-1.html" class="link"></a>
+                                    </div>
+                                </div>
+                                <div class="single-item styled one-item web branding">
+                                    <div class="item">
+                                        <img src="assets/img/item6.jpg" alt="">
+                                        <div class="content">
+                                            <h3>iPackage</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+                                        </div>
+                                        <a href="project-2.html" class="link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- END Portfolio -->
+                    </div>
+                </div>
             </div>
             <!--  END Page Content -->
         </div>
